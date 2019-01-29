@@ -1,0 +1,107 @@
+body {
+  margin-bottom: 100px !important;
+  margin-left: 5%;
+}
+
+.alert {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  margin-right: auto;
+}
+
+.filmcard {
+  margin: 30px;
+}
+
+/*BEGIN OF NAVBAR*/
+
+.fixed-adapt.navbar {
+  position: fixed;
+  left: 0;
+  justify-content: flex-start;
+  padding: 0;
+  background: coral;
+  z-index: 1;
+}
+.fixed-adapt.navbar > .bloc {
+  display: flex;
+  text-align: center;
+}
+.fixed-adapt.navbar .nav-item {
+  margin: 0;
+  padding: 15px;
+}
+.fixed-adapt.navbar .nav-item.active {
+  background: coral;
+}
+
+.fixed-adapt.navbar .nav-link {
+  padding: 0;
+}
+
+@media (orientation: portrait) {
+  .fixed-adapt {
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .fixed-adapt > .bloc {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .fixed-adapt > .bloc > .navbar-nav.fs {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .fixed-adapt > .bloc.fit-content {
+    width: fit-content;
+  }
+
+  .navBarIco > .active {
+    width: 70px;
+  }
+
+  .navBarIco {
+    width: 50px;
+  }
+}
+@media (orientation: landscape) {
+  .fixed-adapt {
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .fixed-adapt > .bloc > .navbar-brand {
+    margin: 0.1em auto;
+  }
+
+  .fixed-adapt > .bloc {
+    flex-direction: column;
+  }
+
+  .fixed-adapt > .bloc > .navbar-nav.fs {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .navBarIco > .active {
+    width: 70px;
+  }
+
+  .navBarIco {
+    width: 50px;
+  }
+}
+.menu-name {
+  display: none;
+}
+
+/*END OF NAVBAR*/
